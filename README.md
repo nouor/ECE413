@@ -1,5 +1,5 @@
 <p align="left">
-  Faculty Of Shubra Engineering
+  Faculty Of Shoubra Engineering
 </p>
 
 ##               Stepper motor controller with rotation and speed levels functionality
@@ -28,7 +28,7 @@ Maria kamel
 </p>
 
  ## Components:-
-- Motor-steaper
+-Stepper Motor
 - Resistance
 - Keypad
 - L2930
