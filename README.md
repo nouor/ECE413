@@ -15,7 +15,7 @@
    Hind Emad
 </p>
 <p align="right">
-  Kholoud Elsyed
+  Kholoud Elsayed
 </p>
 <p align="right">
    Nour elhoda osama
