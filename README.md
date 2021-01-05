@@ -9,24 +9,29 @@
   
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
  
-<p align="right">
+<p align="left">
    Nour eldein
 </p>
-<p align="right">
+<p align="left">
    Hind Emad
 </p>
-<p align="right">
+<p align="left">
   Kholoud Elsayed
 </p>
-<p align="right">
+<p align="left">
    Nour elhoda osama
 </p>
-<p align="right">
+<p align="left">
 Maria kamel  
 </p>
-<p align="right">
+<p align="left">
   Date of submission: [11/1/2021]
 </p>
+<p>
+   
+   
+   
+   </p>
 
  ## Components
 - Stepper Motor
