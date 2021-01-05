@@ -17,7 +17,7 @@
 
 #### Kholoud Elsayed
 
- #### Nour elhoda osama
+#### Nour elhoda osama
 
 #### Maria kamel  
 
@@ -50,7 +50,7 @@ It is used to stop stepper motor rotation but if it pressed when the motor rotat
 - Stepper Motor
 - Resistance
 - Keypad
-- L2930
+- L293D
 - Button
 - AT89C51RD2
 ---
