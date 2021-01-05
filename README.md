@@ -1,8 +1,10 @@
 ![google icon](https://th.bing.com/th/id/Rcbc91b79e3dd4579132f53c0133708a8?rik=Rd2rkYu9n98nfg&riu=http%3a%2f%2fwww.bu.edu.eg%2fportal%2fuploads%2fNewsImgs%2f1486454345.jpg&ehk=cGdMNJ0HatPPFD%2b1sM06OhCTR1bQiLc%2bEPYOJA2cPcc%3d&risl=&pid=ImgRaw)
 
    ## Shoubra Faculty Of Engineering
-
-  # Stepper motor controller with rotation and speed levels functionality 
+<p align="center">
+   <b> Stepper motor controller with rotation and speed levels functionality </b>
+</p>
+   Stepper motor controller with rotation and speed levels functionality 
  
 
 ##               Stepper motor controller with rotation and speed levels functionality
