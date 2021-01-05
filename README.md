@@ -31,6 +31,7 @@ Maria kamel
 
 ## Project Description
 Our project is used to set stepper motor rotation angle using 4 switches:
+
 1-Half Step Switch
 
 2-Full Step Switch
