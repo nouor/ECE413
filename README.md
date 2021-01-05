@@ -2,7 +2,7 @@
   Faculty Of Shubra Engineering
 </p>
 <p align="center">
-# Stepper motor controller with rotation and speed levels functionality
+Stepper motor controller with rotation and speed levels functionality
  
 </p>
 <p align="center">
