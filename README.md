@@ -10,24 +10,20 @@
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
  <h2 align="center">Eng. Ahmed bakr</h2>
  
-<p align="left">
-   Nour eldein
-</p>
-<p align="left">
-   Hind Emad
-</p>
-<p align="left">
-  Kholoud Elsayed
-</p>
-<p align="left">
-   Nour elhoda osama
-</p>
-<p align="left">
-Maria kamel  
-</p>
-<p align="left">
-  Date of submission: [11/1/2021]
-</p>
+
+#### Nour eldein Mohamed
+
+ #### Hind Emad Elsayed
+
+#### Kholoud Elsayed
+
+ #### Nour elhoda osama
+
+#### Maria kamel  
+
+#### Data of Submission: [11/1/2021]
+---
+
 
 ## Project Description
 Our project is used to set stepper motor rotation angle using 4 switches:
@@ -48,6 +44,7 @@ When Get From Keypad Switch is pressed the angle is taken from the keypad. After
 ### 4-Stop Switch
 It is used to stop stepper motor rotation but if it pressed when the motor rotates in the middle of full rotation or half rotation the motor is rotates first to 360° and then stop.
 
+---
 
  ## Components
 - Stepper Motor
@@ -56,6 +53,7 @@ It is used to stop stepper motor rotation but if it pressed when the motor rotat
 - L2930
 - Button
 - AT89C51RD2
+---
 
 
 ## How to Work?
