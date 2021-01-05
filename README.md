@@ -28,7 +28,7 @@ Maria kamel
 </p>
 
  ## Components:-
--Stepper Motor
+- Stepper Motor
 - Resistance
 - Keypad
 - L2930
