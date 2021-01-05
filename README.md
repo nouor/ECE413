@@ -8,6 +8,7 @@
 
   
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
+ <h2 align="center">Eng. Ahmed bakr</h2>
  
 <p align="left">
    Nour eldein
@@ -27,11 +28,7 @@ Maria kamel
 <p align="left">
   Date of submission: [11/1/2021]
 </p>
-<p>
-   
-   
-   
-   </p>
+
 
  ## Components
 - Stepper Motor
