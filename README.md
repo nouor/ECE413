@@ -4,10 +4,10 @@
 <p align="center">
    <b> Stepper motor controller with rotation and speed levels functionality </b>
 </p>
-   Stepper motor controller with rotation and speed levels functionality 
+  
  
 
-##               Stepper motor controller with rotation and speed levels functionality
+
 
 <p align="center">
   Supervisors : Dr. Abdelhamid Attaby
