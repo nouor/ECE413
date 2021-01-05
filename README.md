@@ -1,10 +1,9 @@
 <p align="left">
   Faculty Of Shubra Engineering
 </p>
-<p align="center">
-Stepper motor controller with rotation and speed levels functionality
- 
-</p>
+
+##               Stepper motor controller with rotation and speed levels functionality
+
 <p align="center">
   Supervisors : Dr. Abdelhamid Attaby
 </p>
