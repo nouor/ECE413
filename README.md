@@ -10,24 +10,18 @@
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
  <h2 align="center">Eng. Ahmed bakr</h2>
  
-<p align="left">
-   Nour eldein
-</p>
-<p align="left">
-   Hind Emad
-</p>
-<p align="left">
-  Kholoud Elsayed
-</p>
-<p align="left">
-   Nour elhoda osama
-</p>
-<p align="left">
-Maria kamel  
-</p>
-<p align="left">
-  Date of submission: [11/1/2021]
-</p>
+#### Nour eldein Mohamed
+
+#### Hind Emad
+
+#### Kholoud Elsayed
+
+#### Nour elhoda osama
+
+#### Maria kamel  
+
+### Date of submission: [11/1/2021]
+
 
 
  ## Components
@@ -53,19 +47,19 @@ Maria kamel
 6- Simulation components by using Proteus.
 
 7- Upload code in Proteus and Check it.
-## **Project Description**
+# **Project Description**
 Our project is used to set stepper motor rotation angle using 4 switches:
 1-Half Step Switch
 2-Full Step Switch
 3-Get From Keypad Switch
 4-Stop Switch
-### ***1-Half Step Switch***
+## ***1-Half Step Switch***
 When the half step switch is pressed, the stepper motor will rotate by angles which are multiplies of 45(45,90,135,...360) it repeates several times until stop switch is pressed.
-### ***2-Full Step Switch***
+## ***2-Full Step Switch***
 When the full step switch is pressed, the stepper motor will rotate by angles which are multiplies of 90(90,180.270,...360)it repeates several times until stop switch is pressed.
-### ***3-Get From Keypad Switch***
+## ***3-Get From Keypad Switch***
 When Get From Keypad Switch is pressed the angle is taken from the keypad. After writing the number in the keypad the * button must be pressed which represents the enter button and then the motor will rotate one time with this angle.
-### ***4-Stop Switch***
+## ***4-Stop Switch***
 It is used to stop stepper motor rotation but if it pressed when the motor rotates in the middle of full rotation or half rotation the motor is rotates first to 360° and then stop.
 
 
