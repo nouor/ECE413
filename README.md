@@ -97,5 +97,9 @@ https://www.circuitstoday.com/delay-using-8051-timer
 
 https://www.circuitstoday.com/interfacing-hex-keypad-to-8051
 
+**6- Interface Stepper motor with Driver L293D**
+
+https://electrosome.com/interfacing-dc-motor-8051-keil-c-at89c51/
+
 
 
