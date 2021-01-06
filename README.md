@@ -69,6 +69,33 @@ When Get From Keypad Switch is pressed the angle is taken from the keypad. After
 
 7- Upload code in Proteus and Check it.
 
+---
+
+
+# Reference
+
+**1-Microprocessor 8051**
+
+  https://www.youtube.com/playlist?list=PLXus5Oy3gD22Htt2_sox71InuHy_QbCAx
+
+https://www.electronicshub.org/8051-microcontroller-assembly-language-programming/
+
+https://www.tutorialspoint.com/embedded_systems/es_microcontroller.htm
+
+**2- Datasheet of Microcontroller AT89C51RD2**
+
+
+**3-External Interrupts 8051 Microcontroller**
+
+https://microcontrollerslab.com/interrupts-8051-microcontroller/
+
+**4-Delay using 8051 timer**
+
+https://www.circuitstoday.com/delay-using-8051-timer
+
+**5-Interfacing hex keypad to 8051**
+
+https://www.circuitstoday.com/interfacing-hex-keypad-to-8051
 
 
 
