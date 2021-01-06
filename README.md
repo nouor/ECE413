@@ -72,11 +72,11 @@ When Get From Keypad Switch is pressed the angle is taken from the keypad. After
 ---
 
 
-# Reference
+## Reference
 
 **1-Microprocessor 8051**
 
-  https://www.youtube.com/playlist?list=PLXus5Oy3gD22Htt2_sox71InuHy_QbCAx
+https://www.youtube.com/playlist?list=PLXus5Oy3gD22Htt2_sox71InuHy_QbCAx
 
 https://www.electronicshub.org/8051-microcontroller-assembly-language-programming/
 
