@@ -101,5 +101,7 @@ https://www.circuitstoday.com/interfacing-hex-keypad-to-8051
 
 https://electrosome.com/interfacing-dc-motor-8051-keil-c-at89c51/
 
+https://www.8051projects.net/wiki/Stepper_Motor_Tutorial
+
 
 
