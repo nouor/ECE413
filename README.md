@@ -84,6 +84,7 @@ https://www.tutorialspoint.com/embedded_systems/es_microcontroller.htm
 
 **2- Datasheet of Microcontroller AT89C51RD2**
 
+https://www.alldatasheet.com/datasheet-pdf/pdf/256131/ATMEL/AT89C51RD2.html
 
 **3-External Interrupts 8051 Microcontroller**
 
