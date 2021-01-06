@@ -90,6 +90,20 @@ https://www.alldatasheet.com/datasheet-pdf/pdf/256131/ATMEL/AT89C51RD2.html
 
 https://microcontrollerslab.com/interrupts-8051-microcontroller/
 
+**4-Delay using 8051 timer**
+
+https://www.circuitstoday.com/delay-using-8051-timer
+
+**5-Interfacing hex keypad to 8051**
+
+https://www.circuitstoday.com/interfacing-hex-keypad-to-8051
+
+**6- Interface Stepper motor with Driver L293D**
+
+https://electrosome.com/interfacing-dc-motor-8051-keil-c-at89c51/
+
+https://www.8051projects.net/wiki/Stepper_Motor_Tutorial
+
 
 
 
