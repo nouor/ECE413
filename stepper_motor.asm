@@ -1,6 +1,12 @@
 mov A, 20
 mov B, 33
 
+
+
+READ_PORT0: //READP0
+	MOV A,P0		// Moving the port value to Accumulator.
+	RRC A		// Checking the value of Port 0 to know if FS_SWITCH(P0.0) is pressed or not 
+			
 /*******************************************************************************************
 *			INTERFACING KEYPAD
 ********************************************************************************************/	
