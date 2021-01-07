@@ -22,8 +22,7 @@ FS_SWITCH:		// If FS_SWITCH is pressed (Full step sequence)//FS_SWITCH
 	MOV P2,R1
 	ACALL DELAY
 GET_FROM_KEY:		// If FS_SWITCH is not pressed:
-	RRC A		// Checking the value of Port 0 to know if switch 3 is pressed or not
-	JC READ_PORT0 		// Jumping to READ_PORT0 to check status of switch 1 again (as switch 3 is not pressed) NEGATIVE LOGIC
+	RRC A		// Checking the value of Port 0 to know if switch 3 is pressed or not	// Jumping to READ_PORT0 to check status of switch 1 again (as switch 3 is not pressed) NEGATIVE LOGIC
 			 
 	 
 KEYPAD: 
