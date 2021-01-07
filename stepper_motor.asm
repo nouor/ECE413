@@ -1,7 +1,9 @@
 mov A, 20
 mov B, 33
 
-
+/*******************************************************************************************
+*			INTERFACING KEYPAD
+********************************************************************************************/	
 // Function to get the key from 3*4 keypad
 INTERFACING_KEYPAD:
 /* each time only one of the column pins will be output
