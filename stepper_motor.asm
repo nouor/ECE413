@@ -26,10 +26,10 @@ GET_FROM_KEY:		// If FS_SWITCH is not pressed:
 	JC READ_PORT0 		// Jumping to READ_PORT0 to check status of switch 1 again (as switch 3 is not pressed) NEGATIVE LOGIC
 			 
 	 
-KEYPAD: Rotate the stepper motor with a given angle from the keypad
+KEYPAD: 
 	MOV R1,#0D		// Initializing the least significant byte of the angle with zero
 	
-	ACALL INTERFACING_KEYPAD	// Getting the key from keypad
+	ACALL INTERFACING_KEYPAD	
 			
 /*******************************************************************************************
 *			INTERFACING KEYPAD
