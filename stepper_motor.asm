@@ -53,9 +53,9 @@ COLUMN2:
 	SJMP ROWS 		
 ROWS:
 	 ROW0:
-		 JB P1.0,ROW1		// Checks whether ROW 0 is LOW (If key is pressed) and if not(P1.0 is 1) jump to ROW 1
-		 MOV R2,#0D			// Store ROW number
-		 SJMP CAPTURE			// Jump to CAPTURE to get the key value
+		 JB P1.0,ROW1		    // Checks whether ROW 0 is LOW (If key is pressed) and if not(P1.0 is 1) jump to ROW 1
+		 MOV R2,#0D		   // Store ROW number
+		 SJMP CAPTURE		  // Jump to CAPTURE to get the key value
 
 	 ROW1:
 		 JB P1.1,ROW2
@@ -72,11 +72,11 @@ ROWS:
 		 MOV R2,#3D
 		 SJMP CAPTURE
 	 
-NEXT:		// Continuing to the next column (last column number is stored in R5)
+NEXT:		                       // Continuing to the next column (last column number is stored in R5)
 	 CLM0:
-		 CJNE R5,#0D,CLM1		// Jumb to Column 0 if the last column was column 2
+		 CJNE R5,#0D,CLM1     // Jumb to Column 0 if the last column was column 2
 		 SJMP COLUMN0
-     CLM1:
+         CLM1:
 		 CJNE R5,#1D,CLM2
 		 SJMP COLUMN1
 	 CLM2:
