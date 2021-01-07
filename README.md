@@ -71,8 +71,11 @@ When Get From Keypad Switch is pressed the angle is taken from the keypad. After
 
 ---
 
+SYSTEM DESIGN:
+
 ![micro (1)](https://user-images.githubusercontent.com/76975105/103894599-042f4f00-50a4-11eb-86f1-e77cd3511361.png)
 
+---
 ## Reference
 
 **1-Microprocessor 8051**
