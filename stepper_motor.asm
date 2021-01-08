@@ -99,3 +99,12 @@ NEXT:		                       // Continuing to the next column (last column numb
 		 SJMP COLUMN1
 	 CLM2:
 		 SJMP COLUMN2
+
+
+
+
+
+/***********************************************************
+                     OTHER FUNCTIONS
+***********************************************************/
+
