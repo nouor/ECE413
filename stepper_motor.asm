@@ -114,4 +114,5 @@ NEXT:		                       // Continuing to the next column (last column numb
 Assume the processor is clocked by a 12MHz crystal.
 That means, the timer clock input will be 12MHz/12 = 1MHz
 That means, the time taken for the timer to make one increment = 1/1MHz = 1uS 
+2^16 = 65536 is the maximim number of counts possible for a 16 bit timer.
 */
