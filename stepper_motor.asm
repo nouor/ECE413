@@ -22,6 +22,14 @@ FS_SWITCH:		// If FS_SWITCH is pressed (Full step sequence)//FS_SWITCH
 	MOV P2,R1
 	ACALL DELAY
 	
+	MOV R1,#0CH
+	MOV P2,R1
+	ACALL DELAY
+	
+	MOV R1,#06H
+	MOV R1,#06H
+	SJMP FS_SWITCH
+	
 	
 GET_FROM_KEY:		// If FS_SWITCH is not pressed:
 	RRC A		// Checking the value of Port 0 to know if switch 3 is pressed or not
