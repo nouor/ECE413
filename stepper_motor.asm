@@ -9,9 +9,9 @@ READ_PORT0:                       //READP0
 *					SWITCHES
 ********************************************************************************************/
 
-FS_SWITCH:		// If FS_SWITCH is pressed (Full step sequence)//FS_SWITCH
-	CJNE R7,#00H,AGAIN		// Check the control flag value
-	// While the control flag is zero:
+FS_SWITCH:		                 // If FS_SWITCH is pressed (Full step sequence)//FS_SWITCH
+	CJNE R7,#00H,AGAIN		 // Check the control flag value
+	                                 // While the control flag is zero:
 	ACALL DELAY
 	
 	MOV R1,#03H
