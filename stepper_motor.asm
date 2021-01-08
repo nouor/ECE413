@@ -119,5 +119,7 @@ Let TH be the value value that has to be loaded to TH registed and TL be the val
 Then, THTL =  Hexadecimal equivalent of (65536-X) where (65536-X) is considered in decimal.
 *********
 
+Let the required delay be 50000uS (ie; 50mS).
+
 
 */
