@@ -108,3 +108,9 @@ NEXT:		                       // Continuing to the next column (last column numb
                      OTHER FUNCTIONS
 ***********************************************************/
 
+
+
+/*
+Assume the processor is clocked by a 12MHz crystal.
+That means, the timer clock input will be 12MHz/12 = 1MHz
+*/
