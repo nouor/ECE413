@@ -1,9 +1,10 @@
 <img align="right" height="210" src="https://user-images.githubusercontent.com/76975105/103967327-9bcd8580-5116-11eb-875d-a8a945ed88e3.png">
 
-![download0](https://user-images.githubusercontent.com/76975105/103968026-07fcb900-5118-11eb-8df9-f64c869088d8.jpg)
 
-   ### Shoubra Faculty Of Engineering
-   
+![download0](https://user-images.githubusercontent.com/76975105/103968026-07fcb900-5118-11eb-8df9-f64c869088d8.jpg)
+ 
+ <h2 align="center">Shoubra Faculty Of Engineering </h2> 
+  
  <h1 align="center">  Stepper motor controller with rotation and speed levels functionality </h1>
   
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
