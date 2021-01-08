@@ -37,6 +37,30 @@ KEYPAD:		// Rotate the stepper motor with a given angle from the keypad
 	MOV R1,#0D		          // Initializing the least significant byte of the angle with zero
 	MOV R2,#0D		         // Initializing the most significant byte of the angle with zero
 	ACALL INTERFACING_KEYPAD	// Getting the key from keypad	
+/*******************************************************************************************
+*				To work on keypad
+********************************************************************************************/
+CHECK:
+	CJNE A,#10D,FORMNUM		  // If the key value is (10 --> '*') rotate to the given angle, if not form the angle value
+	
+	
+ANGLE0:	
+	CJNE R1,#0D,ANGLE45		// if (R1 == 0 && R2 == 0) rotate to angle 0, else jumb to ANGLE45
+	CJNE R2,#0H,ANGLE45
+	MOV P2,#06H
+	SJMP READ_PORT0
+ANGLE45:
+    CJNE R1,#45D,ANGLE90		// if (R1 == 45 && R2 == 0) rotate to angle 45, else jumb to ANGLE90
+	CJNE R2,#0H,ANGLE90
+	MOV P2,#02H
+	AJMP READ_PORT0	
+ANGLE90:
+    CJNE R1,#90D,ANGLE135		// if (R1 == 90 && R2 == 0) rotate to angle 90, else jumb to ANGLE135
+	CJNE R2,#0H,ANGLE135
+	MOV P2,#03H
+	AJMP READ_PORT0
+			
+			
 			
 /*******************************************************************************************
 *			INTERFACING KEYPAD
