@@ -167,4 +167,7 @@ DELAY:		                 // DELAY(Timer) function of 0.5 sec
 	
 ISR:		// Interrupt service routine
 	MOV R7,#01H		// Stopping the stepper motor
+	RET		        // Jumps to RETI
+
+END
 
