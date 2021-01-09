@@ -80,7 +80,7 @@ ANGLE270:
 	MOV P2,#0CH
 	AJMP READ_PORT0
 ANGLE315:
-    CJNE R1,#3BH,ABOVE		// if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
+    CJNE R1,#3BH,ABOVE		       // if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
 	CJNE R2,#1H,ABOVE
 	MOV P2,#04H
 	AJMP READ_PORT0
