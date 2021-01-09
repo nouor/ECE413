@@ -224,6 +224,11 @@ NEXT:		                       // Continuing to the next column (last column numb
 		 SJMP COLUMN1
 	 CLM2:
 		 SJMP COLUMN2
+CAPTURE:		// Getting the key value
+	ACALL KEY_VALUE 
+	RET       //RETURN OF FUNCTION INTERFACING_KEYPAD
+	  
+KEY_VALUE:	
 
 
 
