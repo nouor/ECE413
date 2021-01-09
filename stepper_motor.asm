@@ -156,3 +156,4 @@ DELAY:		                 // DELAY(Timer) function of 0.5 sec
 	BACK:
 		MOV TMOD ,#01H	        // Timer0 in mode 1 (over flow)	
 	        MOV TH0 ,#03CH		// Initial value of timer0 (15536 decimal to count 50ms)  
+		MOV TL0 ,#0B0H		// 15536D = 3CB0
