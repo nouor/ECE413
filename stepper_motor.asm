@@ -144,6 +144,6 @@ Then, THTL =  Hexadecimal equivalent of (65536-X) where (65536-X) is considered 
 Let the required delay be 50000uS (ie; 50mS).
 That means X = 50000
 65536 – X =  65536 – 50000 = 15536.
-
+64536 is considered in decimal and converting it t0 hexadecimal gives 3CB0
 
 */
