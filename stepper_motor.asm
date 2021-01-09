@@ -159,24 +159,24 @@ ABOVE:		                      // If angle is >= 360 degree, subtract 360 and rep
 // To Form the angle value (digits) 
 // ((R2->R1) * 10) + NEW KEY //R1=R2=0 in first A is input 
 
-FORMNUM:    				
-	MOV R0,A         		   
-	MOV A,R1							
-	MOV B,#10D				
-	MUL AB					
-	MOV R1,A				
-	MOV R3,B				
-	MOV A,R2
-	MOV B,#10D				
-	MUL AB      				
-	ADD A,R3				
-	MOV R2,A				
-    	MOV A,R1				
-	ADD A,R0				
-	MOV R1,A				
-	MOV A,R2				
-	ADDC A,#0D				
-	MOV R2,A				
+FORMNUM:    	    	//ASSUME we enter 315 first A=3 then A=1 then A=5			
+	MOV R0,A     	//1- R0=A=3,1,5        		   
+	MOV A,R1     	//2- A=R1=0,3,31							
+	MOV B,#10D   	//3- B=10D	 			
+	MUL AB	     	//4- A*B,A=0B=0,A=30,B=0, A=36H,B=1H			
+	MOV R1,A	//5- R1=A=0,30,36H			
+	MOV R3,B	//6- R3=B=0,0,1H			
+	MOV A,R2	//7- A=R2=0,0,0
+	MOV B,#10D	//8- B=10			
+	MUL AB      	//9- A*B=0,0,0			
+	ADD A,R3	//10-A=A+R3=0,0,1H			
+	MOV R2,A	//11-R2=A=0,0,1H			
+    	MOV A,R1	//12-A=R1=0,30,36H			
+	ADD A,R0	//13-A=A+R0=3,31,3B			
+	MOV R1,A	//14-R1=A=3,31,3B			
+	MOV A,R2	//15-A=R2=0,0,1H			
+	ADDC A,#0D	//16-A=A+C+0=0,0,1H			
+	MOV R2,A	//17-R2=A=0,0,1H			
 	
 	ACALL INTERFACING_KEYPAD
 	AJMP CHECK
