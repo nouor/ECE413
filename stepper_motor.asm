@@ -39,14 +39,6 @@ HALF_STEP:		   // If FS_SWITCH is not pressed:
 	//RRC A		// Checking the value of Port 0 to know if switch 2 is pressed or not
 	//JC GET_FROM_KEY	// Jumping to GET_FROM_KEY to check status of switch 3 (as switch 2 is not pressed)
 	JB P0.1,GET_FROM_KEY
-	
-	HS_SWITCH:		// If switch 2 is pressed (Full step sequence) //HS_SWITCH
-	CJNE R7,#00H,AGAIN		// Checking the value of the control flag
-	// While the control flag is zero:
-	ACALL DELAY
-	MOV R1,#02H
-	MOV P2,R1
-	ACALL DELAY
 
 	
 	
@@ -70,7 +62,7 @@ ANGLE0:
 	MOV P2,#06H
 	SJMP READ_PORT0
 ANGLE45:
-        CJNE R1,#45D,ANGLE90		// if (R1 == 45 && R2 == 0) rotate to angle 45, else jumb to ANGLE90
+    	CJNE R1,#45D,ANGLE90		// if (R1 == 45 && R2 == 0) rotate to angle 45, else jumb to ANGLE90
 	CJNE R2,#0H,ANGLE90
 	MOV P2,#02H
 	AJMP READ_PORT0	
@@ -90,7 +82,7 @@ ANGLE180:
 	MOV P2,#09H
 	AJMP READ_PORT0
 ANGLE225:
-    	CJNE R1,#225D,ANGLE270		// if (R1 == 225 && R2 == 0) rotate to angle 225, else jumb to ANGLE270
+   	CJNE R1,#225D,ANGLE270		// if (R1 == 225 && R2 == 0) rotate to angle 225, else jumb to ANGLE270
 	CJNE R2,#0H,ANGLE270
 	MOV P2,#08H
 	AJMP READ_PORT0		
@@ -100,7 +92,7 @@ ANGLE270:
 	MOV P2,#0CH
 	AJMP READ_PORT0
 ANGLE315:
-    	CJNE R1,#3BH,ABOVE		       // if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
+        CJNE R1,#3BH,ABOVE		       // if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
 	CJNE R2,#1H,ABOVE
 	MOV P2,#04H
 	AJMP READ_PORT0
@@ -113,7 +105,11 @@ FORMNUM:
 	MUL AB					
 	MOV R1,A				
 	MOV R3,B				
-	MOV A,R2 						
+	MOV A,R2
+	
+	
+	ACALL INTERFACING_KEYPAD		
+	AJMP CHECK		
 			
 /*******************************************************************************************
 *			INTERFACING KEYPAD
