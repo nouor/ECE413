@@ -120,6 +120,8 @@ ANGLE315:
 	MOV P2,#04H
 	AJMP READ_PORT0
 
+// To Form the angle value (digits) 
+// ((R2->R1) * 10) + NEW KEY //R1=R2=0 in first A is input 
 
 FORMNUM:    				
 	MOV R0,A         		   
@@ -129,6 +131,16 @@ FORMNUM:
 	MOV R1,A				
 	MOV R3,B				
 	MOV A,R2
+	MOV B,#10D				
+	MUL AB      				
+	ADD A,R3				
+	MOV R2,A				
+    	MOV A,R1				
+	ADD A,R0				
+	MOV R1,A				
+	MOV A,R2				
+	ADDC A,#0D				
+	MOV R2,A				
 	
 	ACALL INTERFACING_KEYPAD
 	AJMP CHECK
