@@ -26,8 +26,20 @@ FS_SWITCH:		                 // If FS_SWITCH is pressed (Full step sequence)//FS
 	ACALL DELAY
 	
 	MOV R1,#06H
-	MOV R1,#06H
+	MOV P2,R1
 	SJMP FS_SWITCH
+	
+	    
+AGAIN:		                           // Make the control flag zero again after the interrupt happens and reread P0 again
+	MOV R7,#00H	
+        SJMP READ_PORT0		          // Re read port value again.
+    
+    
+HALF_STEP:		   // If FS_SWITCH is not pressed:
+	//RRC A		// Checking the value of Port 0 to know if switch 2 is pressed or not
+	//JC GET_FROM_KEY	// Jumping to GET_FROM_KEY to check status of switch 3 (as switch 2 is not pressed)
+	JB P0.1,GET_FROM_KEY
+
 	
 	
 GET_FROM_KEY:	                 // If FS_SWITCH is not pressed
