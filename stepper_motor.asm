@@ -79,6 +79,9 @@ HALF_STEP:		   // If FS_SWITCH is not pressed:
 	MOV P2,R1
 	ACALL DELAY
 
+MOV R1,#0CH
+	MOV P2,R1
+	ACALL DELAY
 	
 	
 GET_FROM_KEY:	                 // If FS_SWITCH is not pressed
