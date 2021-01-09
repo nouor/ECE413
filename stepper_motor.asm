@@ -140,6 +140,10 @@ ABOVE:		                      // If angle is >= 360 degree, subtract 360 and rep
 	CLR PSW.7		      // Clear Carry flag (no SUB) // A=A-68-0
 	SUBB A,#68H		     // As (360D --> 0168H), subtract 68H from the least significant byte of the angle value (R1 - 68H) //A=A-C-IMMEDIATE
 	MOV R1,A		    // Store the result in R1
+	MOV A,R2		
+	SUBB A,#01H		   // subtract 01H from the most significant byte of the angle value (R2 - 01H)
+	MOV R2,A		  // Store the result in R2
+	SJMP ANGLE0		 // Check Angle value again
 
 // To Form the angle value (digits) 
 // ((R2->R1) * 10) + NEW KEY //R1=R2=0 in first A is input 
