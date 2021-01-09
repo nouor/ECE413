@@ -161,4 +161,4 @@ DELAY:		                 // DELAY(Timer) function of 0.5 sec
 		L1:JNB TCON.5,L1 // Wait untill the timer over flow flag is set (Jump if bit is not set)
 		CLR TCON.4		// Clear TR0 in reg TCON to stop the timer
 		CLR TCON.5		// Clear the timer over flow flag
-		
+		DJNZ R4 ,BACK // Decrement R4 and jump if not zero
