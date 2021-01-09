@@ -75,7 +75,9 @@ When Get From Keypad Switch is pressed the angle is taken from the keypad. After
 ---
 
 ## Proteus Simulation:
-Using visual Studio to code assembly and simulation as shown in figure, 
+![WhatsApp Image 2021-01-09 at 13 48 56](https://user-images.githubusercontent.com/76590052/104093421-13c0ba80-5293-11eb-92cb-1a8d8ed4ce47.jpeg)
+
+Using Keil uVision5 to code assembly and simulation as shown in figure, 
 Firstly we're connecting microcontroller AT89C51RD2 to keypad by port (P1.0 : P1.6) using this part to input and output,
 connected part (P0.0 : P0.2) to switches " full step, half step, get to temperature" which connected to resistance to limit current,
 in another side stepper motor connected to driver L293D, Finally we upload code to this simulation and get the result. 
