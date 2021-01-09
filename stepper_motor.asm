@@ -39,6 +39,14 @@ HALF_STEP:		   // If FS_SWITCH is not pressed:
 	//RRC A		// Checking the value of Port 0 to know if switch 2 is pressed or not
 	//JC GET_FROM_KEY	// Jumping to GET_FROM_KEY to check status of switch 3 (as switch 2 is not pressed)
 	JB P0.1,GET_FROM_KEY
+	
+	HS_SWITCH:		// If switch 2 is pressed (Full step sequence) //HS_SWITCH
+	CJNE R7,#00H,AGAIN		// Checking the value of the control flag
+	// While the control flag is zero:
+	ACALL DELAY
+	MOV R1,#02H
+	MOV P2,R1
+	ACALL DELAY
 
 	
 	
