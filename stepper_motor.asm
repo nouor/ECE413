@@ -158,3 +158,4 @@ DELAY:		                 // DELAY(Timer) function of 0.5 sec
 	        MOV TH0 ,#03CH		// Initial value of timer0 (15536 decimal to count 50ms)  
 		MOV TL0 ,#0B0H		// 15536D = 3CB0
 		SETB TCON.4		// Set TR0 in reg TCON(Timer Control Register) to start the timer
+		L1:JNB TCON.5,L1 // Wait untill the timer over flow flag is set (Jump if bit is not set)
