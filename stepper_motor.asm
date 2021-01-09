@@ -154,4 +154,5 @@ Program for generating 50mS delay using 8051 timer.
 DELAY:		// DELAY(Timer) function of 0.5 sec
 	MOV R4,#10D		// Counter of 10 as 10 * 50ms = 0.5 sec  
 	BACK:
+		MOV TMOD ,#01H		// Timer0 in mode 1 (over flow)	
 	
