@@ -147,5 +147,6 @@ That means X = 50000
 64536 is considered in decimal and converting it t0 hexadecimal gives 3CB0
 That means THTL = 3C
 Therefore TH=FC and TL=B0
+Program for generating 50mS delay using 8051 timer.
 
 */
