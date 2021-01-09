@@ -50,42 +50,50 @@ ANGLE0:
 	MOV P2,#06H
 	SJMP READ_PORT0
 ANGLE45:
-    CJNE R1,#45D,ANGLE90		// if (R1 == 45 && R2 == 0) rotate to angle 45, else jumb to ANGLE90
+        CJNE R1,#45D,ANGLE90		// if (R1 == 45 && R2 == 0) rotate to angle 45, else jumb to ANGLE90
 	CJNE R2,#0H,ANGLE90
 	MOV P2,#02H
 	AJMP READ_PORT0	
 ANGLE90:
-    CJNE R1,#90D,ANGLE135		// if (R1 == 90 && R2 == 0) rotate to angle 90, else jumb to ANGLE135
+    	CJNE R1,#90D,ANGLE135		// if (R1 == 90 && R2 == 0) rotate to angle 90, else jumb to ANGLE135
 	CJNE R2,#0H,ANGLE135
 	MOV P2,#03H
 	AJMP READ_PORT0
 ANGLE135:
-    CJNE R1,#135D,ANGLE180		// if (R1 == 135 && R2 == 0) rotate to angle 135, else jumb to ANGLE180
+    	CJNE R1,#135D,ANGLE180		// if (R1 == 135 && R2 == 0) rotate to angle 135, else jumb to ANGLE180
 	CJNE R2,#0H,ANGLE180
 	MOV P2,#01H
 	AJMP READ_PORT0
 ANGLE180:
-    CJNE R1,#180D,ANGLE225		// if (R1 == 180 && R2 == 0) rotate to angle 180, else jumb to ANGLE225
+    	CJNE R1,#180D,ANGLE225		// if (R1 == 180 && R2 == 0) rotate to angle 180, else jumb to ANGLE225
 	CJNE R2,#0H,ANGLE225
 	MOV P2,#09H
 	AJMP READ_PORT0
 ANGLE225:
-    CJNE R1,#225D,ANGLE270		// if (R1 == 225 && R2 == 0) rotate to angle 225, else jumb to ANGLE270
+    	CJNE R1,#225D,ANGLE270		// if (R1 == 225 && R2 == 0) rotate to angle 225, else jumb to ANGLE270
 	CJNE R2,#0H,ANGLE270
 	MOV P2,#08H
 	AJMP READ_PORT0		
 ANGLE270:
-    CJNE R1,#0EH,ANGLE315		// if (R1 == 0EH && R2 == 01H) rotate to angle 270, else jumb to ANGLE315
+    	CJNE R1,#0EH,ANGLE315		// if (R1 == 0EH && R2 == 01H) rotate to angle 270, else jumb to ANGLE315
 	CJNE R2,#01H,ANGLE315
 	MOV P2,#0CH
 	AJMP READ_PORT0
 ANGLE315:
-    CJNE R1,#3BH,ABOVE		       // if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
+    	CJNE R1,#3BH,ABOVE		       // if (R1 == 3BH && R2 == 01H) rotate to angle 315, else jumb to ABOVE
 	CJNE R2,#1H,ABOVE
 	MOV P2,#04H
 	AJMP READ_PORT0
-			
-			
+
+
+FORMNUM:    				
+	MOV R0,A         		   
+	MOV A,R1							
+	MOV B,#10D				
+	MUL AB					
+	MOV R1,A				
+	MOV R3,B				
+	MOV A,R2 						
 			
 /*******************************************************************************************
 *			INTERFACING KEYPAD
