@@ -83,6 +83,10 @@ MOV R1,#0CH
 	MOV P2,R1
 	ACALL DELAY
 	
+	MOV R1,#04H
+	MOV P2,R1
+	ACALL DELAY
+	
 	
 GET_FROM_KEY:	                 // If FS_SWITCH is not pressed
 	JB P0.2,READ_PORT0		 
