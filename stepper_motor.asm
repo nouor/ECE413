@@ -148,5 +148,8 @@ That means X = 50000
 That means THTL = 3C
 Therefore TH=FC and TL=B0
 Program for generating 50mS delay using 8051 timer.
-
 */
+
+
+DELAY:		// DELAY(Timer) function of 0.5 sec
+
