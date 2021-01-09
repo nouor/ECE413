@@ -94,7 +94,6 @@ KEYPAD:		// Rotate the stepper motor with a given angle from the keypad
 CHECK:
 	CJNE A,#10D,FORMNUM		  // If the key value is (10 --> '*') rotate to the given angle, if not form the angle value
 	
-	
 ANGLE0:	
 	CJNE R1,#0D,ANGLE45		// if (R1 == 0 && R2 == 0) rotate to angle 0, else jumb to ANGLE45
 	CJNE R2,#0H,ANGLE45
@@ -144,7 +143,7 @@ ABOVE:		                      // If angle is >= 360 degree, subtract 360 and rep
 	SUBB A,#01H		   // subtract 01H from the most significant byte of the angle value (R2 - 01H)
 	MOV R2,A		  // Store the result in R2
 	SJMP ANGLE0		 // Check Angle value again
-
+	
 // To Form the angle value (digits) 
 // ((R2->R1) * 10) + NEW KEY //R1=R2=0 in first A is input 
 
