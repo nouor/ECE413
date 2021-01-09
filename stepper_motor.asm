@@ -229,9 +229,9 @@ NEXT:		                       // Continuing to the next column (last column numb
 		 SJMP COLUMN2
 CAPTURE:		// Getting the key value
 	ACALL KEY_VALUE 
-	RET       //RETURN OF FUNCTION INTERFACING_KEYPAD
+	RET            //RETURN OF FUNCTION INTERFACING_KEYPAD
 	  
-KEY_VALUE:	// key value = ((row*N_col) + col + 1) = ((R2*3) + R0 +1)
+KEY_VALUE:	      // key value = ((row*N_col) + col + 1) = ((R2*3) + R0 +1)
 	 MOV A,R2        
 	 MOV B,#3D        //N_COL 
 	 MUL AB          //A= LOWER BYTE , B=HIGHER BYTE 
@@ -239,16 +239,16 @@ KEY_VALUE:	// key value = ((row*N_col) + col + 1) = ((R2*3) + R0 +1)
 	 MOV A,R0	     
 	 ADD A,#1D      
 	 ADD A,R2        
-
-
-
-
+ZERO: 
+	CJNE A,#11D,RETURN      // If the key value is 11 return zero
+	MOV A,#0D
+RETURN:
+        ACALL DELAY		// Wait 0.5 s 
+	RET
 
 /*******************************************************************************************
                                         OTHER FUNCTIONS
 *******************************************************************************************/
-
-
 
 /*
 Assume the processor is clocked by a 12MHz crystal.
