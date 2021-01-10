@@ -91,7 +91,7 @@ in another side stepper motor connected to driver L293D, Finally we upload code 
 ---
 ## Implementation:
 
-main:
+#### main:
 
 ![WhatsApp Image 2021-01-09 at 21 47 47](https://user-images.githubusercontent.com/76590052/104107385-5ea6f600-52c4-11eb-989d-3697593acaef.jpeg)
 
@@ -100,7 +100,7 @@ The main function will check which switch of ( Half Step Switch - Full Step Swit
 we initialize R7=0 as a flag to check if stop switch is pressed or not.
 also, we configure the interrupt which we will use for stop switch in main function.
 
-interrupt:
+#### interrupt:
 
 ![IMG-20210109-WA0128](https://user-images.githubusercontent.com/76590052/104107114-b8a6bc00-52c2-11eb-972c-b099e969e624.jpg)
 
@@ -118,13 +118,13 @@ Enables the global interrupt control.
 
 The function of interrupt when it's happened is to change R7 (flag) to one.
 
-INTERFACING_KEYPAD:
+#### INTERFACING_KEYPAD:
 every 0.5 second only one of the column pins will be output and the rest will be input pins include the row pins.
 when a button pressed in keypad, we get the key value by formula:
 key value = ((row*N_col) + col + 1)
 
 
-Delay:
+#### Delay:
 we use timer to implement delay function.
 
 Timer:
