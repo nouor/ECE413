@@ -91,7 +91,7 @@ in another side stepper motor connected to driver L293D, Finally we upload code 
 ---
 ## Implementation:
 
-#### main:
+### main:
 
 ![WhatsApp Image 2021-01-09 at 21 47 47](https://user-images.githubusercontent.com/76590052/104107385-5ea6f600-52c4-11eb-989d-3697593acaef.jpeg)
 
@@ -100,7 +100,7 @@ The main function will check which switch of ( Half Step Switch - Full Step Swit
 we initialize R7=0 as a flag to check if stop switch is pressed or not.
 also, we configure the interrupt which we will use for stop switch in main function.
 
-#### interrupt:
+### interrupt:
 
 ![IMG-20210109-WA0128](https://user-images.githubusercontent.com/76590052/104107114-b8a6bc00-52c2-11eb-972c-b099e969e624.jpg)
 
@@ -118,16 +118,16 @@ Enables the global interrupt control.
 
 The function of interrupt when it's happened is to change R7 (flag) to one.
 
-#### INTERFACING_KEYPAD:
+### INTERFACING_KEYPAD:
 every 0.5 second only one of the column pins will be output and the rest will be input pins include the row pins.
 when a button pressed in keypad, we get the key value by formula:
 key value = ((row*N_col) + col + 1)
 
 
-#### Delay:
+### Delay:
 we use timer to implement delay function.
 
-Timer:
+### Timer:
 ![IMG-20210109-WA0133](https://user-images.githubusercontent.com/76590052/104107244-7cc02680-52c3-11eb-937a-0f14c5b0f734.jpg)
 
 ![IMG-20210109-WA0135](https://user-images.githubusercontent.com/76590052/104107284-aed18880-52c3-11eb-93d4-2eccdd3805e0.jpg) 
@@ -140,7 +140,7 @@ That means, the time taken for the timer to make one increment = 1/1MHz = 1uS
 2^16 = 65536 is the maximim number of counts possible for a 16 bit timer.
 Let TH be the value value that has to be loaded to TH registed and TL be the value that has to be loaded to TL register.
 Then, THTL =  Hexadecimal equivalent of (65536-X) where (65536-X) is considered in decimal.
-*********
+
 Let the required delay be 50000uS (ie; 50mS).
 That means X = 50000
 65536 – X =  65536 – 50000 = 15536.
