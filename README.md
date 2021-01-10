@@ -91,9 +91,22 @@ in another side stepper motor connected to driver L293D, Finally we upload code 
 ---
 ## Implementation:
 
+main:
+
 ![WhatsApp Image 2021-01-09 at 21 47 47](https://user-images.githubusercontent.com/76590052/104107385-5ea6f600-52c4-11eb-989d-3697593acaef.jpeg)
 
-So the main function should execute in the program memory address 0000H. The main function will check which switch of ( Half Step Switch - Full Step Switch - Get From Keypad Switch) is pressed and then will execute the instructions that belongs to his branch. also, we configure the interrupt which we will use for stop switch in main function.
+So the main function should execute in the program memory address 0000H. 
+The main function will check which switch of ( Half Step Switch - Full Step Switch - Get From Keypad Switch) is pressed and then will execute the instructions that belongs to his branch. 
+also, we configure the interrupt which we will use for stop switch in main function.
+
+interrupt:
+![IMG-20210109-WA0128](https://user-images.githubusercontent.com/76590052/104107114-b8a6bc00-52c2-11eb-972c-b099e969e624.jpg)
+
+We use (INT0) for stop switch so we should locate the interrupt in the program memory address 0003H.
+![IMG-20210109-WA0131](https://user-images.githubusercontent.com/76590052/104107172-0a4f4680-52c3-11eb-90c7-4b59b2ebe21f.jpg)
+![IMG-20210109-WA0132](https://user-images.githubusercontent.com/76590052/104107195-29e66f00-52c3-11eb-8a40-88f3d55319bc.jpg)
+
+
 ---
 ## Reference
 
