@@ -1,0 +1,3 @@
+".\Objects\stepper.obj" 
+TO ".\Objects\project_stepper" 
+PRINT(".\Listings\project_stepper.m51") RAMSIZE(256) 
