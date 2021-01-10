@@ -120,9 +120,35 @@ The function of interrupt when it's happened is to change R7 (flag) to one.
 
 INTERFACING_KEYPAD:
 every 0.5 second only one of the column pins will be output and the rest will be input pins include the row pins.
-
 when a button pressed in keypad, we get the key value by formula:
 key value = ((row*N_col) + col + 1)
+
+
+Delay:
+we use timer to implement delay function.
+
+Timer:
+![IMG-20210109-WA0133](https://user-images.githubusercontent.com/76590052/104107244-7cc02680-52c3-11eb-937a-0f14c5b0f734.jpg)
+
+![IMG-20210109-WA0135](https://user-images.githubusercontent.com/76590052/104107284-aed18880-52c3-11eb-93d4-2eccdd3805e0.jpg) 
+
+![IMG-20210109-WA0134](https://user-images.githubusercontent.com/76590052/104107266-93667d80-52c3-11eb-906d-1106c4e10a3c.jpg)
+
+Assume the processor is clocked by a 12MHz crystal.
+That means, the timer clock input will be 12MHz/12 = 1MHz
+That means, the time taken for the timer to make one increment = 1/1MHz = 1uS
+2^16 = 65536 is the maximim number of counts possible for a 16 bit timer.
+Let TH be the value value that has to be loaded to TH registed and TL be the value that has to be loaded to TL register.
+Then, THTL =  Hexadecimal equivalent of (65536-X) where (65536-X) is considered in decimal.
+*********
+Let the required delay be 50000uS (ie; 50mS).
+That means X = 50000
+65536 – X =  65536 – 50000 = 15536.
+64536 is considered in decimal and converting it t0 hexadecimal gives 3CB0
+That means THTL = 3C
+Therefore TH=FC and TL=B0
+Program for generating 50mS delay using 8051 timer.
+
 
 ---
 ## Reference
