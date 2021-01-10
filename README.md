@@ -10,7 +10,7 @@
  <h2 align="center"> Supervisors : Dr. Abdelhamid Attaby </h2>
  <h2 align="center">Eng. Ahmed bakr</h2>
  
-#### Nour eldein Mohamed
+#### Nour eldin Mohamed
 
  #### Hind Emad Elsayed
 
@@ -39,7 +39,7 @@ it repeates several times until stop switch is pressed.
 
 **3-Stop Switch:-**
 
-It is used to stop stepper motor rotation but if it pressed when the motor rotates in the middle of full rotation or half rotation the motor is rotates first to 360° and then stop.
+It is used to stop stepper motor rotation but if it pressed when the motor rotates in the middle of full rotation or half rotation the motor is rotates first to 360° and then stop.(we use interrupt to change a flag which we use condition to check if it is set or not.)
 
 **4-Get From Keypad Switch:-**
 
@@ -89,10 +89,11 @@ in another side stepper motor connected to driver L293D, Finally we upload code 
 ![micro (1)](https://user-images.githubusercontent.com/76975105/103894599-042f4f00-50a4-11eb-86f1-e77cd3511361.png)
 
 ---
-## Impelementation:
+## Implementation:
 
 ![WhatsApp Image 2021-01-09 at 21 47 47](https://user-images.githubusercontent.com/76590052/104107385-5ea6f600-52c4-11eb-989d-3697593acaef.jpeg)
 
+So the main function should execute in the program memory address 0000H. The main function will check which switch of ( Half Step Switch - Full Step Switch - Get From Keypad Switch) is pressed and then will execute the instructions that belongs to his branch. also, we configure the interrupt which we will use for stop switch in main function.
 ---
 ## Reference
 
