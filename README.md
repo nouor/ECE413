@@ -183,6 +183,9 @@ https://electrosome.com/interfacing-dc-motor-8051-keil-c-at89c51/
 
 https://www.8051projects.net/wiki/Stepper_Motor_Tutorial
 
+**7-Introduction to KEIL
+https://www.youtube.com/watch?v=mhHJV21CDjs&list=PLXus5Oy3gD22Htt2_sox71InuHy_QbCAx&index=1&ab_channel=VenkatasubramanianK
+
 
 
 
